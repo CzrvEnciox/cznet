@@ -1,5 +1,5 @@
 const Sidebarbtn = () => {
-    return <button id="sidebarbtn2">side</button>
+    return <button id="sidebarbtn">side</button>
 }
 
 export default Sidebarbtn

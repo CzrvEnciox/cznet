@@ -1,7 +1,8 @@
 import Sidebarbtn from "../Button/Sidebarbtn";
+import "./Headers.css";
 
 const Headers = () => {
-    return <div className={'header'}>
+    return <div id='header'>
         <Sidebarbtn />
     </div>
 }

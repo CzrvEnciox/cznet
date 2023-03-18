@@ -1,0 +1,15 @@
+#header {
+  display: flex;
+  height: 2rem;
+  background-color: beige;
+}
+
+#sidebarbtn {
+  width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #sidebarbtn {
+    display: none;
+  }
+}/*# sourceMappingURL=Headers.css.map */

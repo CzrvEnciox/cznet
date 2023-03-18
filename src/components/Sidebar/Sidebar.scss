@@ -1,0 +1,13 @@
+#sidebar {
+
+    display: flex;
+    height: 1000px;
+    background-color: aquamarine;
+    grid-area: sidebar;
+
+    &.close{
+        // transform: translateX(-100%);
+        display: none;
+    }
+    
+}

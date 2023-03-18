@@ -1,0 +1,9 @@
+#sidebar {
+  display: flex;
+  height: 1000px;
+  background-color: aquamarine;
+  grid-area: sidebar;
+}
+#sidebar.close {
+  display: none;
+}/*# sourceMappingURL=Sidebar.css.map */

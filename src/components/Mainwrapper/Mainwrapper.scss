@@ -1,0 +1,44 @@
+@use '../Sidebar/Sidebar.scss' as *;
+@use '../Main/Main.scss' as *;
+@use '../Toc/Toc.scss' as *;
+
+#mainwrapper {
+
+    display: flex;
+    padding: 0.5rem;
+
+    @media screen and (min-width:768px) {
+
+        display: grid;
+        grid-template-areas: 'sidebar main';
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        gap: 3rem;
+
+    }
+
+    @media screen and (min-width:1200px){
+        display: grid;
+        grid-template-areas: 'sidebar main toc';
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr) minmax(0, 15rem);
+        gap: 3rem;
+
+        #toc {
+            display: block;
+        }
+    
+    }
+    
+    @media screen and (max-width:768px){
+        #sidebar {
+            width: 200px;
+            z-index: 2;
+            opacity: 50%;
+        }
+        #main {
+            width: 100vw;
+            z-index: 1;
+        }
+        
+    }
+    
+}
